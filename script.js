@@ -74,6 +74,7 @@ async function loadContent(api, containerId, categoryKey) {
 
 // 當視窗載入完成後開始抓取資料
 window.onload = () => {
+    window.scrollTo(0, 0); // 確保頁面從頂部開始
     loadContent(VIDEO_API, 'video-list', '影片');
     loadContent(PROJECT_API, 'project-list', '專案');
 };
